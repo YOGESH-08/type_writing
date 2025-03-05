@@ -80,8 +80,14 @@ body{
     height: 50;
     cursor: pointer;
     border-radius: 10px;
+    transition: 0.3s ease  ;
 }
 
 .content{
     margin: 0px;
+}
+.content button:hover{
+    border: 1px solid black;
+    text-decoration: underline;
+    width: 98px;
 }

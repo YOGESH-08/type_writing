@@ -92,3 +92,10 @@ body{
     text-decoration: underline;
     width: 98px;
 }
+.correct{
+    color: green;
+    outline: 1px solid greenyellow;
+}
+.incorrect{
+    
+}

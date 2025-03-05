@@ -26,7 +26,12 @@ function initTyping(){
     else{
         characters[charIndex].classList.add("incorrect");
     }
+    
     charIndex++;
+    characters[charIndex-1].classList.add("active");
+    
+    characters[charIndex-1].classList.add("remove");
+
 }
 randomParagraph();
 inpField.addEventListener("input",initTyping);

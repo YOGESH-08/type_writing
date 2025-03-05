@@ -26,31 +26,62 @@ body{
 .typing-text p{
     font-size: 21px;
     text-align: justify;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
     word-break: break-all ;
 }
 .typing-text::-webkit-scrollbar{
     width: 0;
 }
-.content-box.content{
+.content-box .content{
     display: flex;
-    width: 100px;
+    
+    margin-top: 10px;
+    padding: 1px 0;
     justify-content: space-between;
-    margin-top:  17px;
-    padding: 12px 0;
+    border-top:1px solid #ccc ;
+    
 }
 .content .result-details{
     display: flex;
-    width: calc(100% - 140px);
+    width: calc(200% - 140px);
     justify-content: space-between;
-    
-}
-.result-details li {
-    list-style: none;
+    margin: 0;
 }
 
 .result-details li {
+    display: flex;
     list-style: none;
     border-left: 1px solid black;
+    padding-left: 5px;
+}
+.result-details li p{
+    font-size: 19px;
+}
+.result-details li span{
+    display: block;
+    font-size: 20px;
+    margin-left: 10px;
+    padding-top: 19px;
+}
+.content button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    padding-top:50px ;
+    height: 50px;
+    display: block;
+    border: none;
+    outline: none;
+    background-color: rgb(230, 230, 115);
+    width: 85px;
+    padding: 8px 0px;
+    color: black;
+    height: 50;
+    cursor: pointer;
+    border-radius: 10px;
 }
 
+.content{
+    margin: 0px;
+}

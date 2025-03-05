@@ -9,10 +9,48 @@ body{
     width: 770px;
     background-color: aliceblue;
     border: 3px solid black;
-    padding: 10px 10px 10px 10px;
+    padding: 40px 40px 40px 40px;
+    border-radius: 11px;
 }
-.wrapper .content{
-    padding: 13px 20px 0px;
+.wrapper .content-box{
+    padding: 10px 20px 0px;
     border: 1px solid #ccc;
-
+    border-radius: 11px;
 }
+
+.content-box .typing-text{
+    max-height: 255px;
+    overflow-y: auto;
+}
+
+.typing-text p{
+    font-size: 21px;
+    text-align: justify;
+    letter-spacing: 1px;
+    word-break: break-all ;
+}
+.typing-text::-webkit-scrollbar{
+    width: 0;
+}
+.content-box.content{
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+    margin-top:  17px;
+    padding: 12px 0;
+}
+.content .result-details{
+    display: flex;
+    width: calc(100% - 140px);
+    justify-content: space-between;
+    
+}
+.result-details li {
+    list-style: none;
+}
+
+.result-details li {
+    list-style: none;
+    border-left: 1px solid black;
+}
+

@@ -1,50 +1,52 @@
-body{
+body {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height:100vh;  
+    min-height: 100vh;
     background-color: aqua;
 }
-.wrapper{
-    width: 770px;
+
+.wrapper {
+    width: 800px;
     background-color: aliceblue;
     border: 3px solid black;
-    padding: 40px 40px 40px 40px;
+    padding: 40px;
     border-radius: 11px;
 }
-.wrapper .content-box{
-    padding: 10px 20px 0px;
+
+.wrapper .content-box {
+    padding: 10px 20px 0;
     border: 1px solid #ccc;
     border-radius: 11px;
 }
 
-.content-box .typing-text{
-
+.content-box .typing-text {
     max-height: 255px;
     overflow-y: auto;
 }
 
-.typing-text p{
+.typing-text p {
     font-size: 21px;
     text-align: justify;
     letter-spacing: 1px;
-    word-break: break-all ;
+    word-break: break-word; /* Changed from break-all to break-word for better readability */
 }
-.typing-text::-webkit-scrollbar{
+
+.typing-text::-webkit-scrollbar {
     width: 0;
 }
-.content-box .content{
+
+.content-box .content {
     display: flex;
-    
     margin-top: 10px;
     padding: 1px 0;
     justify-content: space-between;
-    border-top:1px solid #ccc ;
-    
+    border-top: 1px solid #ccc;
 }
-.content .result-details{
+
+.content .result-details {
     display: flex;
-    width: calc(200% - 140px);
+    width: calc(100% - 140px);
     justify-content: space-between;
     margin: 0;
 }
@@ -55,55 +57,67 @@ body{
     border-left: 1px solid black;
     padding-left: 5px;
 }
-.result-details li p{
+
+.result-details li:first-child {
+    border-left: none; /* Removes border from the first item */
+}
+
+.result-details li p {
     font-size: 19px;
 }
-.result-details li span{
+
+.result-details li span {
     display: block;
     font-size: 20px;
     margin-left: 10px;
     padding-top: 19px;
 }
-.content button{
+
+.content button {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 4px;
-    padding-top:50px ;
     height: 50px;
-    display: block;
     border: none;
     outline: none;
     background-color: rgb(230, 230, 115);
     width: 85px;
-    padding: 8px 0px;
+    padding: 8px 0;
     color: black;
-    height: 50;
     cursor: pointer;
     border-radius: 10px;
-    transition: 0.3s ease  ;
+    transition: 0.3s ease;
 }
 
-.content{
-    margin: 0px;
-}
-.content button:hover{
+.content button:hover {
     border: 1px solid black;
     text-decoration: underline;
     width: 98px;
 }
-.correct{
-    color: green;
-    outline: 2px solid greenyellow;
+
+.correct {
+    color: green !important; /* Ensure the correct text is green */
 }
-.incorrect{
-    color: red;
-    outline: 2px solid red;
+
+.incorrect {
+    color: red !important; /* Ensure the incorrect text is red */
 }
-.remove{
-    outline: 0px solid white;
-    text-decoration: none;  
-}
-.active{
+
+.active {
     text-decoration: underline;
+    font-weight: bold;
+}
+
+
+.remove {
+    text-decoration: none;
+    font-weight: lighter;
+    color: inherit; /* Ensures it matches surrounding text */
+}
+
+.normal {
+    text-decoration: none;
+    outline: 0;
+    color: black;
 }

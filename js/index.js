@@ -98,3 +98,4 @@ inpField.addEventListener("input", initTyping);
 function song(s){
     new Audio(`./audio/${s}.mp3`).play();
 }
+

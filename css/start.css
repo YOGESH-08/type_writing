@@ -120,3 +120,9 @@ body {
     outline: 0;
     color: black;
 }
+
+input {
+    background-color: transparent;
+    border: 0px solid;
+
+}
